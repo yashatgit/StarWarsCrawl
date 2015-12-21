@@ -11,7 +11,19 @@ window.onload = function (e) {
             '<p>During the battle, Rebel spies managed to steal secret plans to the Empire\'s ultimate weapon, the DEATH STAR, an armored space station with enough power to destroy an entire planet. </p>' +
             '<p>Pursued by the Empire\'s sinister agents, Princess Leia races home aboard her starship, custodian of the stolen plans that can save her people and restore freedom to the galaxy...."</p>' +
             '' +
-
+            '' +
+            '<p><i><b>Episode V: The Empire Strikes Back</b></i></p>' +
+            '<p>"It is a dark time for the Rebellion. Although the Death Star has been destroyed, Imperial troops have driven the Rebel forces from their hidden base and pursued them across the galaxy. </p>' +
+            '<p>Evading the dreaded Imperial Starfleet, a group of freedom fighters led by Luke Skywalker has established a new secret base on the remote ice world of Hoth. </p>' +
+            '<p>The evil lord Darth Vader, obsessed with finding young Skywalker, has dispatched thousands of remote probes into the far reaches of space...." </p>' +
+            '' +
+            '' +
+            '<p><i><b>Episode VI: Return of the Jedi</b></i></p>' +
+            '<p>"Luke Skywalker has returned to his home planet of Tatooine in an attempt to rescue his friend Han Solo from the clutches of the vile gangster Jabba the Hutt. </p>' +
+            '<p>Little does Luke know that the GALACTIC EMPIRE has secretly begun construction on a new armored space station even more powerful than the first dreaded Death Star. </p>' +
+            '<p>When completed, this ultimate weapon will spell certain doom for the small band of rebels struggling to restore freedom to the galaxy..." </p>' +
+            '' +
+            '' +
             '<p><b>Episode I: The Phantom Menace</b></p>' +
             '<p>"Turmoil has engulfed the Galactic Republic. The taxation of trade routes to outlying star systems is in dispute.</p>' +
             '<p>Hoping to resolve the matter with a blockade of deadly battleships, the greedy Trade Federation has stopped all shipping to the small planet of Naboo. </p>' +
@@ -45,16 +57,13 @@ window.onload = function (e) {
         },
 
         addTextInScrollContainer = function (text) {
-            _getElementById('scrollContent').innerHTML = '';
-            _getElementById('scrollContent').setAttribute('class', '');
-            _getElementById('scrollContent').setAttribute('class', 'scrollAnimate scrollContent');
-            _getElementById('scrollContent').innerHTML = text;
+            _getElementById('scroll').innerHTML = '<div id="scrollContent">' + text + '</div>';
         },
 
         init = function () {
 
             _getElementById('generateScroll').addEventListener("click", function () {
-                addTextInScrollContainer(_getElementById('scrollTxt').value);
+                addTextInScrollContainer((_getElementById('scrollTxt').value || '').replace(/\n\r?/g, '<br />'));
             });
 
             _getElementById('generateRandomScroll').addEventListener("click", function () {

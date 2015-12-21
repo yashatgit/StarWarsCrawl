@@ -107,13 +107,11 @@ b {
     background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
 }
 
-.scrollContent {
+#scrollContent {
     position: absolute;
     top: 100%;
-}
-
-.scrollAnimate {
-    animation: scroll 40s linear 4s infinite;
+    animation: scroll 60s linear 0.1s infinite;
+    width: 100%;
 }
 
 @keyframes scroll {
