@@ -1,8 +1,8 @@
-# Far Far Away
+# [Far Far Away](http://yashatgit.github.io/far-far-away/)
 A custom Star Wars Crawl generator.
 
 Just type or copy-paste your custom text and hit the generate button.
-May the force be with you!
+May the force be with you! 
 
 Usage
 -----------
