@@ -2,9 +2,9 @@ window.onload = function (e) {
 
     var cachedElements = {},
 
-        DEFAULT_TEXT = 'Enter a message, you must!',
+        DEFAULT_TEXT = '<div>Enter a message, you must!</div><br><img class="yodaMsg" src="assets/masteryoda.png">',
 
-        CRAWL = '<p>A long time ago</p>' +
+        CRAWL = '<h1 id="logo" class="hidee">STAR WARS</h1><p>A long time ago</p>' +
             '<p>in a galaxy far, far away....</p>' +
             '<br><br>' +
 
