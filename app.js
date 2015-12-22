@@ -2,6 +2,8 @@ window.onload = function (e) {
 
     var cachedElements = {},
 
+        DEFAULT_TEXT = 'Enter a message, you must!',
+
         CRAWL = '<p>A long time ago</p>' +
             '<p>in a galaxy far, far away....</p>' +
             '<br><br>' +
@@ -63,7 +65,7 @@ window.onload = function (e) {
         init = function () {
 
             _getElementById('generateScroll').addEventListener("click", function () {
-                addTextInScrollContainer((_getElementById('scrollTxt').value || '').replace(/\n\r?/g, '<br />'));
+                addTextInScrollContainer((_getElementById('scrollTxt').value || DEFAULT_TEXT).replace(/\n\r?/g, '<br />'));
             });
 
             _getElementById('generateRandomScroll').addEventListener("click", function () {
