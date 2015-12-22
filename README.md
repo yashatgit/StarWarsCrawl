@@ -1,5 +1,4 @@
-# [Far Far Away](http://yashatgit.github.io/far-far-away/)
-A custom Star Wars Crawl generator.
+# [Staw Wars crawl generator](http://yashatgit.github.io/StarWarsCrawl/)
 
 Just type or copy-paste your custom text and hit the generate button.
 May the force be with you! 
