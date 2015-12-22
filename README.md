@@ -1,4 +1,4 @@
-# [Far Far Away](http://yashatgit.github.io/far-far-away/)
+# [Far Far Away](http://yashatgit.github.io/StarWarsCrawl/)
 A custom Star Wars Crawl generator.
 
 Just type or copy-paste your custom text and hit the generate button.
